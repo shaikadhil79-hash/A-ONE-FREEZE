@@ -1,0 +1,11 @@
+{
+  "name": "a-one-service-frontend",
+  "private": true,
+  "version": "1.0.0",
+  "description": "A-ONE FREEZE Air Conditioner Service & Management Platform",
+  "scripts": {
+    "dev": "npm --prefix a-one-freeze run dev",
+    "build": "npm --prefix a-one-freeze run build",
+    "preview": "npm --prefix a-one-freeze run preview"
+  }
+}

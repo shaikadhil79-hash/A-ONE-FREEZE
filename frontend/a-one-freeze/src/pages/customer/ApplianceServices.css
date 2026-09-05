@@ -1,0 +1,405 @@
+.appliance-services-page {
+  min-height: 100vh;
+
+  background: #f5faff;
+
+  color: #123b58;
+
+  font-family: Arial, sans-serif;
+}
+
+
+/* =========================
+   HEADER
+========================= */
+
+.appliance-services-header {
+  padding: 22px 7%;
+
+  background: #ffffff;
+
+  border-bottom: 1px solid #dfebf1;
+}
+
+.appliance-services-header button {
+  border: none;
+
+  background: transparent;
+
+  color: #087ea4;
+
+  font-weight: 700;
+
+  cursor: pointer;
+
+  display: flex;
+
+  align-items: center;
+
+  gap: 8px;
+}
+
+
+/* =========================
+   HERO
+========================= */
+
+.appliance-services-hero {
+  text-align: center;
+
+  padding: 45px 20px;
+}
+
+.appliance-services-icon {
+  width: 78px;
+
+  height: 78px;
+
+  margin: 0 auto 20px;
+
+  border-radius: 22px;
+
+  background: #e2f6fc;
+
+  color: #0784aa;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+}
+
+.appliance-services-hero > span {
+  color: #087ea4;
+
+  font-size: 10px;
+
+  font-weight: 900;
+
+  letter-spacing: 2px;
+}
+
+.appliance-services-hero h1 {
+  margin: 8px 0;
+
+  font-size: 38px;
+}
+
+.appliance-services-hero p {
+  max-width: 600px;
+
+  margin: auto;
+
+  color: #6d899c;
+
+  line-height: 1.6;
+}
+
+
+/* =========================
+   CONTAINER
+========================= */
+
+.appliance-services-container {
+  width: min(1050px, 90%);
+
+  margin: auto;
+
+  padding-bottom: 70px;
+}
+
+
+/* =========================
+   TITLE
+========================= */
+
+.appliance-services-title {
+  margin-bottom: 22px;
+}
+
+.appliance-services-title span {
+  color: #087ea4;
+
+  font-size: 10px;
+
+  font-weight: 900;
+
+  letter-spacing: 2px;
+}
+
+.appliance-services-title h2 {
+  margin: 7px 0 4px;
+
+  font-size: 24px;
+}
+
+.appliance-services-title p {
+  margin: 0;
+
+  color: #7893a2;
+
+  font-size: 12px;
+}
+
+
+/* =========================
+   SERVICE LIST
+========================= */
+
+.appliance-service-list {
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 16px;
+}
+
+
+/* =========================
+   SERVICE CARD
+========================= */
+
+.appliance-service-card {
+  display: grid;
+
+  grid-template-columns:
+    55px 1fr 220px;
+
+  align-items: center;
+
+  gap: 20px;
+
+  padding: 22px;
+
+  background: #ffffff;
+
+  border: 1px solid #dfebf1;
+
+  border-radius: 18px;
+
+  box-shadow:
+    0 10px 30px rgba(
+      20,
+      70,
+      95,
+      0.05
+    );
+
+  transition:
+    transform .2s ease,
+    box-shadow .2s ease;
+}
+
+.appliance-service-card:hover {
+  transform: translateY(-3px);
+
+  box-shadow:
+    0 16px 35px rgba(
+      20,
+      70,
+      95,
+      0.09
+    );
+}
+
+
+/* NUMBER */
+
+.appliance-service-number {
+  width: 46px;
+
+  height: 46px;
+
+  border-radius: 13px;
+
+  background: #e5f7fc;
+
+  color: #0784aa;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  font-weight: 900;
+
+  font-size: 11px;
+}
+
+
+/* INFO */
+
+.appliance-service-info h3 {
+  margin: 0;
+
+  font-size: 17px;
+}
+
+.appliance-service-info p {
+  margin: 6px 0;
+
+  color: #718b9b;
+
+  font-size: 11px;
+
+  line-height: 1.5;
+}
+
+.service-check {
+  display: flex;
+
+  align-items: center;
+
+  gap: 6px;
+
+  color: #258261;
+
+  font-size: 10px;
+}
+
+.service-check svg {
+  color: #18a574;
+}
+
+
+/* ACTION */
+
+.appliance-service-action {
+  text-align: right;
+}
+
+.appliance-service-action span {
+  display: block;
+
+  color: #8aa0ac;
+
+  font-size: 9px;
+}
+
+.appliance-service-action strong {
+  display: block;
+
+  margin: 3px 0 10px;
+
+  color: #087ea4;
+
+  font-size: 22px;
+}
+
+
+/* BOOK BUTTON */
+
+.appliance-service-action button {
+  border: none;
+
+  border-radius: 9px;
+
+  padding: 11px 14px;
+
+  background:
+    linear-gradient(
+      100deg,
+      #31c6eb,
+      #087ea4
+    );
+
+  color: #ffffff;
+
+  font-size: 10px;
+
+  font-weight: 800;
+
+  cursor: pointer;
+
+  display: inline-flex;
+
+  align-items: center;
+
+  gap: 7px;
+}
+
+
+/* INFO BOX */
+
+.appliance-service-info-box {
+  margin-top: 22px;
+
+  padding: 18px;
+
+  border-radius: 15px;
+
+  background: #eefaf5;
+
+  border: 1px solid #d8eee4;
+
+  display: flex;
+
+  gap: 12px;
+}
+
+.appliance-service-info-box strong {
+  color: #17624b;
+
+  font-size: 12px;
+}
+
+.appliance-service-info-box p {
+  margin: 5px 0 0;
+
+  color: #6e8c80;
+
+  font-size: 10px;
+
+  line-height: 1.6;
+}
+
+
+/* NOT FOUND */
+
+.appliance-not-found {
+  min-height: 100vh;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  flex-direction: column;
+
+  gap: 15px;
+}
+
+.appliance-not-found button {
+  border: none;
+
+  padding: 12px 20px;
+
+  border-radius: 10px;
+
+  background: #087ea4;
+
+  color: white;
+
+  cursor: pointer;
+}
+
+
+/* MOBILE */
+
+@media (max-width: 750px) {
+
+  .appliance-service-card {
+    grid-template-columns: 45px 1fr;
+
+  }
+
+  .appliance-service-action {
+    grid-column: 2;
+
+    text-align: left;
+  }
+
+}
