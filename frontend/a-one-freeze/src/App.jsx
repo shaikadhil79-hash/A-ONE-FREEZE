@@ -2,6 +2,7 @@ import {
   BrowserRouter,
   Routes,
   Route,
+  useLocation,
 } from "react-router-dom";
 
 // =================================================
@@ -31,6 +32,8 @@ import TechnicianRegister
 // =================================================
 // CUSTOMER PAGES
 // =================================================
+
+import AirCoolerWebsite from "./pages/customer/AirCoolerWebsite";
 
 import CustomerHome
   from "./pages/customer/CustomerHome";
@@ -115,15 +118,26 @@ import PortalHeader from "./components/PortalHeader";
 // APP
 // =================================================
 
+// Keep the demo role switcher on existing portals, not the public landing page.
+function PortalNavigation() {
+  const { pathname } = useLocation();
+  const isAirCoolerWebsite = pathname === "/air-cooler" || pathname === "/air-cooler/";
+  return isAirCoolerWebsite ? null : <PortalHeader />;
+}
+
 function App() {
 
   return (
 
     <BrowserRouter>
-      <PortalHeader />
+      <PortalNavigation />
 
       <Routes>
 
+        <Route
+          path="/air-cooler"
+          element={<AirCoolerWebsite />}
+        />
 
         {/* =================================================
             DEFAULT
