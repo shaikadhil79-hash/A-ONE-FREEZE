@@ -67,6 +67,10 @@ import ServiceCompleted
 
 import AdminReviews
   from "./pages/admin/AdminReviews";
+
+import AirCoolerWebsite
+  from "./pages/customer/AirCoolerWebsite";
+
 // =================================================
 // TECHNICIAN PAGES
 // =================================================
@@ -132,6 +136,16 @@ function App() {
         <Route
           path="/"
           element={<RoleSelection />}
+        />
+
+
+        {/* =================================================
+            AIR COOLER SERVICE WEBSITE
+        ================================================= */}
+
+        <Route
+          path="/air-cooler"
+          element={<AirCoolerWebsite />}
         />
 
 
